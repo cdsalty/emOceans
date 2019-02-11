@@ -1,0 +1,1483 @@
+/* font styles
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Nova Slim', cursive;
+font-family: 'Nova Round', cursive;
+font-family: 'Nova Mono', monospace;
+font-family: 'Nova Oval', cursive;
+font-family: 'Nova Cut', cursive; */
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MOBILE SHARED CSS =======================================================> */
+
+body {
+    background-image: url("../images/01.backgroundimg_invert.jpg");
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.body-background {
+    background-color: #cdcfed;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.outerWrapper{
+    height: 100vh;
+    width: 100vw;
+}
+
+.navbar {
+    background-color: #4c0be8;
+    height: 15vh;
+    width: 100vw;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+.menu {
+    position: absolute;
+    right:2rem;
+    top: 1rem;
+    height: 2rem;
+    font-family: 'Nova Slim', cursive;
+    color: white;
+}
+
+ul {
+    margin: 5px;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.nav-button {
+    margin: 10px 5px;
+}
+
+#logo {
+    width: 10rem;
+    position: absolute;
+    left: 2rem;
+    top: .75rem;
+}
+
+.title {
+    height: 20;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 8rem;
+    font-family: 'Nova Oval', cursive;
+    font-size: 2rem;
+    color: white;
+    background-color: #cdcfed;
+    opacity: 0.9;
+}
+ 
+.footer {
+    background: #175bf4;
+    height: 8vh;
+    width: 100vw;
+    opacity: .8;
+    position: fixed;
+    top: 92vh;
+    margin: 0;
+    z-index: 10;
+}
+
+/* mobile =================================================*/
+
+.swatchContainer {
+    height: 80;
+    width: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    padding-top: .5rem;
+    margin-bottom: 3rem;
+}
+
+.swatch {
+    width: 26vw;
+    height: 26vw;
+    /* width: 6rem;
+    height: 6rem; */
+    margin: 8px;
+    background: grey;
+    border-radius: 50%;
+}
+
+.mobileHide {
+    display: none;
+}
+
+/* mobile mood editor ==============================================> */
+
+.editorContainer {
+    width: 100vw;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paletteContainer {
+    width: 100 vw;
+    height: auto;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.palette {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 3px dotted white;
+}
+
+.editorContainer {
+
+    width: 100vw;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttonContainer {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    font-family: 'Nova Round', cursive;
+    font-size: 1.5rem;
+    color: #4c0be8; 
+    background: rgb(215, 215, 215);
+    width: 8rem;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    margin: .5rem;
+}
+
+#reset{
+    font-family: 'Nova Oval', cursive;
+    font-size: 1.5rem;
+    color: #4c0be8;
+    background:white;
+    width: 8rem;
+    outline: none;
+    margin: .5rem;
+    margin-top: 1.2rem;
+}
+
+#save{
+    font-family: 'Nova Oval', cursive;
+    font-size: 1.5rem;
+    color: white;
+    background: #4c0be8;
+    width: 8rem;
+    outline: none;
+    margin: .5rem;
+    margin-top: 1.2rem;
+}
+
+.colorInfo{
+    font-family: 'Nova Oval', cursive;
+    font-size: .8rem;
+    color: #4c0be8; 
+    margin: 2rem;
+}
+
+/* mobile mood editor–text inputs ===================================> */
+
+.submitContainer{
+    width: 100vw;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.inputs{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Nova Slim', cursive;
+    font-size: 1rem;
+    color: white;
+    background: #4c0be8;
+    opacity: .5;
+    overflow: hidden;
+  }
+
+  textarea{
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Nova Slim', cursive;
+    font-size: 1rem;
+    color: white;
+    background: #4c0be8;
+    opacity: .5;
+    overflow: hidden;
+  }
+
+  input[type=date] {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: 'Nova Slim', cursive;
+    font-size: 1rem;
+    color: white;
+    background: #4c0be8;
+    opacity: .5;
+  }
+
+.form{
+    width: 100%;
+    height: auto;
+    font-family: 'Nova Oval', cursive;
+    font-size: 1.5rem;
+    color: #4c0be8;
+    margin: 0 auto;
+}
+
+#submitButton{
+    font-family: 'Nova Oval', cursive;
+    font-size: 1.5rem;
+    color: white;
+    background: #4c0be8;
+    width: 8rem;
+    outline: none;
+    margin-top: 1rem;
+}
+
+.textContainer{
+    display: none;
+    /* margin: 3rem auto;
+    width: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 10px; */
+    
+}
+
+.dataMuse {
+    font-family: 'Nova Oval', cursive;
+    color: #4c0be8;
+    width: 100%;
+}
+
+/* mobile mood boards================================================= */
+
+.boardWrapper{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.moodBoardButtonContainer{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardButton{
+    font-family: 'Nova Round', cursive;
+    font-size: 1.5rem;
+    color: #4c0be8; 
+    background: rgb(215, 215, 215);
+    width: 8rem;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    margin: .5rem;
+}
+
+.boardDisplay{
+    overflow: scroll;
+    background: lightslategray;
+    height: 20rem;
+    width: 20rem;
+    margin: 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.mood-circle-data{
+    clip-path: circle(8rem at center);
+    width: 16rem;
+    height: 16rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    overflow: scroll;
+}
+
+.mood-date{
+    font-family: 'Nova Round', cursive;
+    font-size: 1rem;
+    color: inherit;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    width: 10rem;
+    height: 2rem;
+    margin: .5rem;
+}
+
+.mood-word{
+    font-family: 'Nova Round', cursive;
+    font-size: 1rem;
+    color: inherit;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    width: 10rem;
+    height: 2rem;
+    margin: .5rem;
+}
+
+.mood-note{
+    font-family: 'Nova Round', cursive;
+    font-size: 1rem;
+    color: inherit;
+    filter: invert(1);
+    mix-blend-mode: difference;
+    width: 10rem;
+    height: 5rem;
+    overflow: scroll;
+    padding: 1rem;
+}
+
+
+/* mobile about page ========================================= */
+
+#aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nova Round', cursive;
+    margin-bottom: 1rem;
+    overflow: scroll;
+    }
+
+.aboutTitle {
+    font-size: 22pt;
+    text-align: center;
+    font-family: 'Nova Oval', cursive;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 0rem;
+    width: 100%;
+    color: white;
+    background-color: #cdcfed;
+    opacity: .9;
+}
+
+.aboutEmoceans{
+    width: 80%;
+    text-align: center;
+    margin: 2rem auto;
+    color: #4c0be8;
+}
+
+#aboutColorWrapper{
+    /* display: flex;
+    justify-content: center; */
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.aboutColor{
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+
+.colorName{
+    display:inline-block;
+}
+
+#devWrapper{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.devName{
+    text-align:center;
+    margin: 1rem auto;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.fullName{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.aboutEach{
+    width: 75%;
+    margin: 0 auto;
+    color:#e3e4f2;
+}
+
+.profile{
+    margin-top: 0.5rem;
+}
+
+.profile a{
+    color:#4c0be8;
+}
+
+.profile a:hover{
+    text-decoration: underline;
+}
+
+/*tablet portrait==========================================*/
+
+@media (min-width: 640px) and (max-width: 1024px){
+
+    /* tablet shared============================================ */
+    body{
+        background-image: url("../images/01.backgroundimg_invert.jpg");
+        background-size: auto 100vh;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .body-background{
+        background-color: #cdcfed;
+        opacity: 0.9;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .outerWrapper{
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .navbar {
+        background-color: #4c0be8;
+        height: 12vh;
+        width: 100vw;
+        opacity: .8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        z-index: 10;
+    }
+    
+    .menu {
+        position: absolute;
+        right:2rem;
+        top: 2.5rem;
+        height: 2rem;
+        font-family: 'Nova Slim', cursive;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
+    ul {
+        margin: 5px;
+    }
+    
+    li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .nav-button {
+        margin: 10px 5px;
+    }
+    
+    #logo{
+        width: 14rem;
+        position: absolute;
+        left: 2.5rem;
+        top: .5rem;
+    }
+    
+    .title{
+        height: 20;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 10rem;
+        font-family: 'Nova Oval', cursive;
+        font-size: 3.5rem;
+        color: white;
+        background-color: #cdcfed;
+        opacity: .9;
+    }
+     
+    .footer{
+        background: #175bf4;
+        height: 8vh;
+        width: 100vw;
+        opacity: .8;
+        position: fixed;
+        top: 92vh;
+        margin: 0;
+        z-index: 10;
+    }
+    
+    /* tablet =================================================*/
+    
+    .swatchContainer{
+        height: 80;
+        width: auto;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        padding-top: .5rem;
+        margin-bottom: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .swatch{
+        width: 21vw;
+        height: 21vw;
+        /* width: 6rem;
+        height: 6rem; */
+        margin: 1rem;
+        background: grey;
+        border-radius: 50%;
+    }
+    
+    .mobileHide {
+        display: none;
+    }
+    
+    /* tablet mood editor CSS ==============================================> */
+    
+    .editorContainer{
+        width: 100vw;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .paletteContainer{
+        width: 100 vw;
+        height: auto;
+        display: none;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .palette{
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+    
+    .editorContainer{
+        width: 100vw;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .buttonContainer{
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    button{
+        font-family: 'Nova Round', cursive;
+        font-size: 3rem;
+        color: #4c0be8; 
+        background: rgb(215, 215, 215);
+        width: 16rem;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        margin: .5rem;
+    }
+    
+    #reset{
+        font-family: 'Nova Oval', cursive;
+        font-size: 3rem;
+        color: #4c0be8;
+        background:white;
+        width: 16rem;
+        outline: none;
+        margin: .5rem;
+        margin-top: 1.2rem;
+    }
+    
+    #save{
+        font-family: 'Nova Oval', cursive;
+        font-size: 3rem;
+        color: white;
+        background: #4c0be8;
+        width: 16rem;
+        outline: none;
+        margin: .5rem;
+        margin-top: 1.2rem;
+    }
+    
+    .colorInfo{
+        font-family: 'Nova Oval', cursive;
+        font-size: .8rem;
+        color: #4c0be8; 
+        margin: 2rem;
+    }
+    
+    
+    /* tablet editor–text inputs CSS ===================================> */
+    
+    .submitContainer{
+        width: 100vw;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    
+    .inputs{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 4px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: 'Nova Slim', cursive;
+        color: white;
+        font-size: 2rem;
+        background: #4c0be8;
+        opacity: .5;
+        overflow: hidden;
+      }
+
+      textarea{
+        width: 100%;
+        padding: 4px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: 'Nova Slim', cursive;
+        font-size: 2rem;
+        color: white;
+        background: #4c0be8;
+        opacity: .5;
+        overflow: hidden;
+      }
+    
+      input[type=date] {
+        width: 100%;
+        padding: 4px 8px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: 'Nova Slim', cursive;
+        color: white;
+        font-size: 1.5rem;
+        background: #4c0be8;
+        opacity: .5;
+      }
+    
+    .form{
+        width: 100%;
+        height: auto;
+        font-family: 'Nova Oval', cursive;
+        font-size: 2rem;
+        color: #4c0be8;
+        margin: 0 auto;
+    }
+    
+    #submitButton{
+        font-family: 'Nova Oval', cursive;
+        font-size: 3rem;
+        color: white;
+        background: #4c0be8;
+        width: 16rem;
+        outline: none;
+        margin: .5rem;
+        margin-top: 1.2rem;
+    }
+    
+    .textContainer{
+        display: none;
+        /* margin: 3rem auto;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 10px; */
+    }
+
+    .dataMuse {
+        font-family: 'Nova Oval', cursive;
+        color: #4c0be8;
+        width: 100%;
+}
+    
+    /* tablet mood boards================================================= */
+    
+    .boardWrapper{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .moodBoardButtonContainer{
+        display: flex;
+        width: 100vw;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .boardButton{
+        font-family: 'Nova Round', cursive;
+        font-size: 3rem;
+        color: #4c0be8; 
+        background: rgb(215, 215, 215);
+        width: 16rem;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+        margin: .5rem;
+        margin-top: 1rem;
+    }
+    
+    .boardDisplay{
+        overflow: scroll;
+        background: lightslategray;
+        height: 35rem;
+        width: 35rem;
+        margin-top: 2rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mood-circle-data{
+        clip-path: circle(7rem at center);
+        width: 14rem;
+        height: 14rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+    }
+    
+    .mood-date{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-word{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-note{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 5rem;
+        overflow: scroll;
+    }
+}
+
+/*tablet landscape ========================================*/ 
+@media (max-width: 1024px) and (min-width: 960px) and (max-height: 768px) and (min-height: 692px){
+
+}
+
+/* Desktop ==================================================================================================*/
+@media (min-width: 1024px) {
+
+    body {
+        background-image: url("../images/01.backgroundimg_invert.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+}
+
+    .body-background{
+        background-color: #cdcfed;
+        opacity: 0.9;
+        width: 100%;
+        height: 100vh;
+        overflow: scroll;
+        /* background-size: cover; */
+}
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 6rem;
+        margin: 0;
+        z-index: 1;
+    }
+
+    ul {
+        margin: 5px;
+    }
+
+    .menu {
+        position: absolute;
+        right: 10px;
+        height: 3rem; 
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        line-height: 3rem;
+    }
+
+    .title {
+        font-size: 32pt;
+        margin-top: 7rem;
+        padding-top: 0rem;
+        width: 100%;
+        background-color: #cdcfed;
+        opacity: .9;
+    }
+
+    .outerWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .swatchContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 400px;
+        margin: 0.5rem 0.5rem;
+        padding: 0px;
+    }
+
+    .swatch {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin: 5px 5px 15px 5px;
+    }
+
+    .mobileHide {
+        display: flex;
+}
+
+    .paletteContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .palette {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 1rem;
+    }
+
+    .editorContainer {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 1rem 2rem;
+    }
+    
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 2rem;
+        width: 200px;
+    }
+
+    button {
+        margin: 2px;
+        background-color: rgb(215, 215, 215);
+        font-size: 16px;
+    }
+
+    button:hover {
+        text-decoration: underline;
+    }
+
+    .submitContainer{
+        width: 50%;
+        display: none;
+        flex-direction: column;
+        align-items: space-evenly;
+        justify-content: center;
+    }
+
+    form {
+        margin: 0.5 0rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    form label,
+    form input {
+        display: block;
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    form input {
+        font-size: 12pt;
+        font-family: inherit;
+    }
+
+    #note {
+        width: 100%;
+        height: 100px;
+        font-family: inherit;
+        font-size: 14px;
+    }
+
+    .textContainer {
+        display: none;
+        margin: 3rem auto;
+        width: 400px;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .dataMuse {
+        font-family: 'Nova Oval', cursive;
+        color: #4c0be8;
+        width: 100%;
+    }
+
+    .word-info-box {
+        margin: 5px;
+    }
+
+    .boardDisplay{
+        overflow: scroll;
+        background: slategray;
+        height: 60vh;
+        width: 75vw;
+        margin-top: 2rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mood-circle-data{
+        clip-path: circle(7rem at center);
+        width: 14rem;
+        height: 14rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+    }
+    
+    .mood-date{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-word{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-note{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 5rem;
+        overflow: scroll;
+    }
+
+/* desktop about page ================================================================ */
+
+    #aboutWrapper {
+        margin-bottom: 2rem;
+        
+    }
+    .aboutTitle {
+        font-size: 30pt;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 0rem;
+    }
+
+    .aboutEmoceans{
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+    #aboutColorWrapper{
+        width: 800px;
+        margin-bottom: 2rem;
+    }
+
+    .aboutColor{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 1rem auto;
+    }
+
+    .colorName{
+        display:inline-block;
+    }
+
+    #devWrapper{
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    .devName{
+        margin: 1rem auto;
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .fullName{
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .aboutEach{
+        width: 75%;
+        margin: 0 auto;
+        color:#e3e4f2;
+    }
+
+    .profile{
+        margin-top: 0.5rem;
+    }
+
+    .profile a{
+        color:#4c0be8;
+    }
+
+    .profile a:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Desktop XL =======================================================================================================*/
+@media (min-width: 1400px) {
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 6rem;
+        margin: 0;
+        z-index: 1;
+    }
+
+    ul {
+        margin: 5px;
+    }
+
+    .menu {
+        position: absolute;
+        right: 20px;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        line-height: 3rem;
+    }
+
+    .title {
+        font-size: 44pt;
+        margin-top: 8rem;
+        padding-top: 0rem;
+        width: 100%;
+        background-color: #cdcfed;
+        opacity: .9;
+    }
+
+    .outerWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .swatchContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 2rem 1rem;
+    }
+
+    .swatch {
+        background-color: gray;
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+        margin: 5px 5px 15px 5px;
+    }
+
+    .mobileHide {
+        display: flex;
+    }
+
+    .paletteContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .palette {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+
+    .editorContainer {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 2rem 3rem;
+    }
+    
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem rem;
+        width: 200px;
+    }
+
+    button {
+        margin: 3px;
+        background-color: rgb(215, 215, 215);
+        font-size: 18px;
+        height: 30px;
+    }
+
+    .submitContainer{
+        width: 50%;
+        display: none;
+        flex-direction: column;
+        align-items: space-evenly;
+        justify-content: center;
+    }
+
+    #reset{
+        font-family: 'Nova Oval', cursive;
+        font-size: 1.5rem;
+        color: #4c0be8;
+        background:white;
+        width: 9rem;
+        outline: none;
+        margin: .5rem;
+        margin-top: 1.2rem;
+    }
+
+    #save{
+        font-family: 'Nova Oval', cursive;
+        font-size: 1.5rem;
+        color: white;
+        background: #4c0be8;
+        width: 9rem;
+        outline: none;
+        margin: .5rem;
+        margin-top: 1.2rem;
+    }
+
+    form {
+        width: 75%;
+        margin: 0.5 0rem;
+    }
+
+    form label,
+    form input {
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    form input {
+        font-size: 12pt;
+        font-family: inherit;
+    }
+
+    textarea {
+        width: 100%;
+        height: 50px;
+        font-family: 'Nova Slim', cursive;
+        font-size: 12px;
+    }
+
+    .textContainer {
+        display: none;
+    }
+  
+    .boardDisplay{
+        overflow: scroll;
+        background: slategray;
+        height: 60vh;
+        width: 75vw;
+        margin-top: 2rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mood-circle-data{
+        clip-path: circle(7rem at center);
+        width: 14rem;
+        height: 14rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+    }
+    
+    .mood-date{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-word{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 2rem;
+        margin: .5rem;
+    }
+    
+    .mood-note{
+        font-family: 'Nova Round', cursive;
+        font-size: 1rem;
+        color: inherit;
+        filter: invert(1);
+        mix-blend-mode: difference;
+        width: 10rem;
+        height: 5rem;
+        overflow: scroll;
+    }
+
+    /* XL desktop about page ================================================================ */
+
+    .aboutTitle {
+        font-size: 36pt;
+    }
+
+    .aboutEmoceans{
+        width: 800px;
+        text-align: center;
+        margin: 2rem auto;
+        color: #4c0be8;
+    }
+
+    #aboutColorWrapper{
+        /* display: flex;
+        justify-content: center; */
+        width: 1000px;
+        margin-bottom: 2rem;
+    }
+
+    .aboutColor{
+        text-align: center;
+        width: 90%;
+        
+    }
+
+    .colorName{
+        display:inline-block;
+    }
+
+    #devWrapper{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .devName{
+        text-align:center;
+        margin: 1rem auto;
+        width: 90%;
+        padding: 0.5rem;
+        border-radius: 10px;;
+    }
+
+    .fullName{
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .aboutEach{
+        width: 75%;
+        margin: 0 auto;
+        color:#e3e4f2;
+    }
+
+    .profile{
+        margin-top: 0.5rem;
+    }
+}
